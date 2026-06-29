@@ -1,0 +1,655 @@
+
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
+
+@font-face {
+  font-family: 'Copperplate-light';
+  src: url('FONTS/copperplate-gothic-light/copperplate-gothic-light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Copperplate-bold';
+  src: url('FONTS/copperplate-gothic-bold-regular_pEQAz/Copperplate Gothic Bold Regular/Copperplate Gothic Bold Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Copperplate';
+  src: url('FONTS/copperplate-cc/CopperplateCC-Heavy.otf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #5b1414;
+  color: white;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* HEADER */
+.header {
+  position: relative;
+  top: 20px;
+  height: 4rem;
+  width: 100vw;
+  font-size: large;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 4rem;
+  z-index: 10;
+}
+
+
+.logo {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  position: relative;
+  left: -40px;
+}
+
+.logo-text {
+  font-family: 'Copperplate-bold';
+  color: white;
+}
+
+.logo:hover,
+.logo-text:hover {
+  -webkit-text-stroke: 0.5px #C1854E;
+  cursor: pointer;
+}
+
+.navbar .nav-list {
+  padding-top: 4px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 6rem;
+}
+
+.nav-link:hover {
+  text-shadow: 1px 1px 10px #f98512;
+  cursor: pointer;
+}
+
+.header-icons,
+.icons-list {
+  display: flex;
+  align-items: center;
+}
+
+.icons-list {
+  gap: 1.5rem;
+  position: relative;
+  left: 30px;
+}
+
+.icon-item svg {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  height: 700px;
+  width: 100%;
+  position: relative;
+  bottom: 10px;
+}
+
+.hero-container {
+  height: 700px;
+  width: 100%;
+  display: flex;
+}
+
+.hero-left {
+  height: inherit;
+  width: 800px;
+  position: relative;
+  left: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title,
+.hero-subtitle,
+.hero-button {
+  padding: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title,
+.hero-subtitle {
+  margin: 20px;
+}
+
+.hero-title {
+  font-size: 45px;
+  font-family: 'Copperplate-bold';
+  font-weight: bold;
+  letter-spacing: 8px;
+}
+
+.hero-title:hover {
+  text-shadow: 1px 1px 15px #ce945a;
+  cursor: pointer;
+}
+
+.hero-underline {
+  width: 300px;
+  height: 50px;
+  position: relative;
+  bottom: 40px;
+}
+
+.hero-subtitle {
+  font-family: 'Copperplate-light';
+  width: 600px;
+  position: relative;
+  top: -60px;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 5px;
+}
+
+.hero-subtitle:hover {
+  cursor: pointer;
+  text-shadow: 1px 1px 15px #C1854E;
+}
+
+.hero-button {
+  font-size: 18px;
+  border: 2px solid #C1854E;
+  border-radius: 40px;
+  padding: 8px 10px;
+  color: white;
+  background-color: #A93636;
+  position: relative;
+  bottom: 60px;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  box-shadow: 1px 1px 10px 2px #C1854E;
+  transform: scale(1.05);
+}
+
+.hero-divider {
+  position: relative;
+  top: 60px;
+  left: 100px;
+}
+
+.hero-divider img {
+  width: 100px;
+}
+
+.hero-right {
+  position: relative;
+  left: -90px;
+  bottom: 40px;
+}
+
+.hero-image {
+  width: 900px;
+  height: 800px;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.5s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* ABOUT */
+.about {
+  min-height: 752px;
+  width: 100vw;
+  color: black;
+  background-color: white;
+  font-family: "Radio Canada", sans-serif !important;
+}
+
+.about-container {
+  width: 100%;
+  min-height: 752px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 115px;
+  text-shadow: 1px 1px 5px #db7713;
+  font-size: 38px;
+}
+
+.about-content {
+  min-height: 637px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-sidebar,
+.about-main {
+  position: relative;
+  bottom: 20px;
+  text-align: center;
+  width: 30%;
+}
+
+.about-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  margin: 50px 0;
+  font-family: "Radio Canada", sans-serif !important;
+  letter-spacing: 1px;
+}
+
+.about-card {
+  margin: 28px 0;
+  max-width: 360px;
+}
+
+.about-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #751525;
+  border: 2px solid #DEB760;
+  border-radius: 100px;
+  width: 65px;
+  height: 64px;
+  position: relative;
+  bottom: 6px;
+  margin: 0 auto 10px;
+}
+
+.about-icon-wrapper svg {
+  width: 40px;
+  height: 40px;
+}
+
+.about-card h3 {
+  font-size: 19px;
+  letter-spacing: 2px;
+}
+
+.about-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #770A1C 7%, #C41D39 46%, #751525 100%);
+  color: white;
+  height: 84%;
+  width: 380px !important;
+  border-radius: 50px;
+  border: 3px solid #DEB760;
+  padding: 25px 20px;
+}
+
+.about-main h3 {
+  position: relative;
+  top: 5px;
+  font-size: 35px;
+  text-shadow: 1px 1px 10px #3d030c;
+}
+
+.about-underline {
+  width: 230px;
+}
+
+.about-text-first {
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.about-text-second {
+  font-style: italic;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.about-image {
+  position: relative;
+  left: -135px;
+  width: 290px;
+  bottom: -43px;
+  z-index: 2;
+  transition: transform 0.5s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* SHOP */
+.shop {
+  background: linear-gradient(180deg, #770A1C 7%, #C41D39 46%, #751525 100%);
+  height: 752px;
+  width: 100vw;
+  font-family: "Radio Canada", sans-serif !important;
+}
+
+.shop-wrapper {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.shop-slider {
+  display: flex;
+  width: 300%;
+  transition: transform 0.6s ease;
+}
+
+.shop-slide {
+  width: 100vw;
+  height: 752px;
+  flex-shrink: 0;
+}
+
+.shop-slide-heading {
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 10px #3f0c05;
+  font-size: 28px;
+}
+
+.shop-slide-heading:hover {
+  cursor: pointer;
+}
+
+.shop-underline-left {
+  position: relative;
+  top: 20px;
+  left: 180px !important;
+}
+
+.shop-underline-right {
+  position: relative;
+  bottom: 28px;
+  left: -194px !important;
+}
+
+.shop-grid {
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+}
+
+.shop-item {
+  position: relative;
+  top: 6px;
+  background-color: white;
+  width: 300px;
+  height: 270px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 1px 1px 13px 2px #700202;
+  transition: transform 0.5s ease;
+}
+
+.shop-item img {
+  position: relative;
+  width: 250px;
+  max-height: 250px;
+  object-fit: contain;
+}
+
+.shop-item:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 1px 1px 25px 2px #420101;
+}
+
+.shop-nav-btn {
+  position: absolute;
+  top: 50%;
+  background-color: #96172C;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 100%;
+  z-index: 5;
+  box-shadow: 1px 1px 20px 0.5px #ffffffbc;
+  transition: transform 0.5s ease;
+}
+
+.shop-nav-btn:hover {
+  box-shadow: 1px 1px 20px 2px #ffffff;
+  transform: scale(1.05);
+}
+
+.shop-prev {
+  left: 20px;
+}
+
+.shop-next {
+  right: 40px;
+}
+
+/* PROMISE */
+.promise-section {
+  width: 100vw;
+  height: 775px;
+  background-color: white;
+  color: black;
+}
+
+.promise-container {
+  display: flex;
+  height: 775px;
+}
+
+.promise-image {
+  height: 775px;
+  width: 40vw;
+}
+
+.promise-img {
+  height: 775px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.promise-content {
+  height: 775px;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Radio Canada", sans-serif;
+  line-height: 70px;
+  text-align: center;
+}
+
+.promise-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #751525;
+  border: 2px solid #DEB760;
+  border-radius: 100px;
+  width: 80px;
+  height: 80px;
+  transition: transform 0.5s ease;
+}
+
+.promise-icon:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.promise-icon svg {
+  height: 34px;
+}
+
+.promise-content h2 {
+  font-size: 50px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.promise-content p {
+  max-width: 760px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+  min-height: 500px;
+  width: 100vw;
+  background-image: url(ELEMENTS/footer/Group17.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Radio Canada", sans-serif;
+  padding: 50px 35px 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 45px;
+}
+
+.footer-section h3 {
+  font-size: 60px;
+}
+
+.footer-section h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.footer-tagline {
+  font-size: medium;
+  margin-bottom: 45px;
+}
+
+.footer-address p,
+.footer-info p,
+.footer-contact p,
+.footer-links li {
+  padding: 5px 0;
+  line-height: 28px;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-bottom {
+  margin-top: 60px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .header {
+    padding: 0 1.5rem;
+    gap: 1rem;
+  }
+
+  .navbar .nav-list {
+    gap: 1.2rem;
+  }
+
+  .hero-container,
+  .about-content,
+  .promise-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero,
+  .hero-container,
+  .shop,
+  .shop-slide,
+  .promise-section,
+  .promise-container {
+    height: auto;
+  }
+
+  .hero-left,
+  .hero-right,
+  .about-sidebar,
+  .about-main,
+  .promise-image,
+  .promise-content {
+    width: 100% !important;
+    left: 0;
+    bottom: 0;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-subtitle {
+    width: 90%;
+  }
+
+  .shop-grid {
+    padding: 30px 0;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}

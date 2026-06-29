@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.second{
+    height: 750px;
+    width: 1590px;
+    background-color: aquamarine;
+    font-family: "GFS Didot", serif;
+}
+
+.heading{
+text-align: center;
+height: 15%;
+background-color: pink;
+}
+
+.sec-bottom{
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+.sec-left{
+    background-color: blue;
+}
+
+.sec-right{
+        background-color: purple;
+}
+
+.sec-mid{
+        background-color: chartreuse;
+        margin: 200px;
+}
+
+.sec-mid, .sec-left ,.sec-right{
+    text-align: center;
+    gap: 2px;
+}
+
+.right-down, .right-up , .left-up, .left-down{
+
+    line-height: 30px;
+    margin: 100px 0;
+}
+
+
+
+

@@ -1,0 +1,54 @@
+.second {
+  background-color: white;
+  color: black;
+  width: 1577px;
+  height: 700px;
+  
+
+}
+
+.sec-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1577px;
+  height: 85%;
+  background-color: tomato;
+  text-align: center;
+}
+
+
+.sec-heading {
+  display: flex;
+  height: 15%;
+  width: 1577px;
+  background-color: violet;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec-left {
+    
+  background-color: aqua;
+  text-align: center;
+}
+
+.sec-mid {
+  
+  background-color: #f98512;
+  text-align: center;
+}
+
+.sec-right {
+ 
+  background-color: #ce945a;
+  text-align: center;
+}
+
+
+.left-up svg{
+
+  background-color: #7C1D1D;
+  /* padding:1px; */
+  border-radius: 50px;
+}
